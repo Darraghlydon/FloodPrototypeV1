@@ -1,0 +1,38 @@
+{
+  "mode": "Interactive",
+  "menuTitle": "Resilience Actions",
+  "options": [
+    {
+      "id": "inspect_bridge",
+      "label": "Bridge Inspection",
+      "description": "Carry out a structural inspection to assess damage and scour risk.",
+      "cost": "5000",
+      "actionType": 1,
+      "enabled": true
+    },
+    {
+      "id": "schedule_repairs",
+      "label": "Schedule Repairs",
+      "description": "Plan and execute repair works to mitigate structural deterioration.",
+      "actionType": 2,
+      "cost": "15000",
+      "enabled": true
+    },
+    {
+      "id": "road_diversion",
+      "label": "Road Diversion",
+      "description": "Divert traffic to alternative routes to reduce load and risk.",
+      "actionType": 3,
+      "cost": "2000",
+      "enabled": true
+    },
+    {
+      "id": "monitoring",
+      "label": "Increase Monitoring",
+      "description": "Deploy additional sensors or increase inspection frequency.",
+      "actionType": 4,
+      "cost": "10000",
+      "enabled": true
+    }
+  ]
+}

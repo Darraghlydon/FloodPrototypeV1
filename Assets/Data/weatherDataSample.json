@@ -1,0 +1,41 @@
+{
+  "location": "Oughterard, Co. Galway",
+  "units": "metric",
+  "forecast": [
+    {
+      "dayInfo": "Mon",
+      "weatherDescription": "Sunny",
+      "weatherType": 1
+    },
+    {
+      "dayInfo": "Tue",
+      "weatherDescription": "Partly cloudy",
+      "weatherType": 2
+    },
+    {
+      "dayInfo": "Wed",
+      "weatherDescription": "Rain",
+      "weatherType": 3
+    },
+    {
+      "dayInfo": "Thu",
+      "weatherDescription": "Rain",
+      "weatherType": 3
+    },
+    {
+      "dayInfo": "Fri",
+      "weatherDescription": "Thunderstorms",
+      "weatherType": 4
+    },
+    {
+      "dayInfo": "Sat",
+      "weatherDescription": "Extreme Flooding",
+      "weatherType": 5
+    },
+    {
+      "dayInfo": "Sun",
+      "weatherDescription": "Sunny",
+      "weatherType": 1
+    }
+  ]
+}
