@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ForecastSimulatorManager : MonoBehaviour
 {
@@ -12,8 +13,12 @@ public class ForecastSimulatorManager : MonoBehaviour
 
     [SerializeField] private ForecastUIController forecastUIController;
     [SerializeField] private DataInsightUIController dataInsightUIController;
+    //Remove this after UI Mockup Demo - DL
+    [SerializeField] private RawImage townPreview;
+    [SerializeField] private Texture[] townImages;
     private Coroutine routine;
     private int currentDayIndex = 0;
+    
 
     [SerializeField] private GameObject waterObject;
     private Vector3 waterStartPos = Vector3.zero;
@@ -55,6 +60,9 @@ public class ForecastSimulatorManager : MonoBehaviour
             yield return new WaitForSeconds(simulationTickRate); // Simulate a step every 2 seconds
             Debug.Log($"Simulating forecast Day {currentDayIndex}");
             currentDayIndex++;
+            
+            //Remove this after UI Mockup Demo - DL
+            townPreview.texture = townImages[currentDayIndex];
             forecastUIController.IncreaseDayTick(currentDayIndex);
             dataInsightUIController.IncreaseDayTick(currentDayIndex);
             UpdateWaterLevel(currentDayIndex);
